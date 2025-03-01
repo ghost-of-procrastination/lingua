@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Nunito } from 'next/font/google'
 import './globals.css'
+import { ClerkProvider } from '@clerk/nextjs'
 
 const nunito = Nunito({
 	variable: '--font-geist-sans',
@@ -18,9 +19,11 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
 	return (
-		<html lang="en">
-			<body className={`${nunito.variable} antialiased`}>{children}</body>
-		</html>
+		<ClerkProvider>
+			<html lang="en">
+				<body className={`${nunito.variable} antialiased`}>{children}</body>
+			</html>
+		</ClerkProvider>
 	)
 }
 export default RootLayout
