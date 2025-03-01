@@ -1,5 +1,8 @@
 {
 	"editor.detectIndentation": false,
+	"explorer.compactFolders": false,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[sass]": {
 		"editor.tabSize": 4
 	},
@@ -17,8 +20,5 @@
 	},
 	"[tsx]": {
 		"editor.tabSize": 4
-	},
-	"[cpp]": {
-		"editor.tabSize": 3.5
 	}
 }
