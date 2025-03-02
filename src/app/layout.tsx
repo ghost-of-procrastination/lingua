@@ -4,7 +4,7 @@ import './globals.css'
 import { ClerkProvider } from '@clerk/nextjs'
 
 const nunito = Nunito({
-	variable: '--font-geist-sans',
+	variable: '--font-nunito',
 	subsets: ['latin'],
 })
 
@@ -19,9 +19,13 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
 	return (
-		<ClerkProvider>
+		<ClerkProvider afterSignOutUrl="/">
 			<html lang="en">
-				<body className={`${nunito.variable} antialiased`}>{children}</body>
+				<body
+					className={`${nunito.className} antialiased`}
+				>
+					{children}
+				</body>
 			</html>
 		</ClerkProvider>
 	)
