@@ -7,6 +7,7 @@
 @theme {
 	--font-sans: var(--font-nunito);
 	--font-mono: var(--font-nunito);
+	--shadow-top-md: 0px -1px 3px 0px rgba(0, 0, 26, 0.15);
 }
 
 :root {

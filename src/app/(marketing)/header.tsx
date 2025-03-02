@@ -13,11 +13,11 @@ import { Loader } from 'lucide-react'
 
 export const Header = () => {
 	return (
-		<header className="h-20 w-full border-b-2 border-slate-200 px-2">
+		<header className="h-20 w-full border-b-1 shadow-sm border-slate-200 px-2">
 			<div className="lg:max-w-screen-lg mx-auto flex items-center justify-between h-full ">
 				<div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
 					<MascotIcon height="40px" />
-					<p className="text-2xl font-extrabold text-green-600 tracking-wide">
+					<p className="text-3xl font-bold text-green-500 tracking-wide">
 						Lingo
 					</p>
 				</div>
