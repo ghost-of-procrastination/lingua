@@ -3,7 +3,7 @@ import FrIcon from '@/assets/fr-flag.svg'
 import JpIcon from '@/assets/jp-flag.svg'
 import KrIcon from '@/assets/kr-flag.svg'
 import UsIcon from '@/assets/us-flag.svg'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/shadcn/components/ui/button'
 import { SvgIcon } from '@/types'
 
 interface Props {

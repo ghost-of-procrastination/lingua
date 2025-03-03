@@ -6,7 +6,9 @@ const MainLayout = ({ children }: Props) => {
 	return (
 		<>
 			<main className="pl-[256px] h-full">
-				{children}
+				<div className="bg-emerald-500 h-full">
+					{children}
+				</div>
 			</main>
 		</>
 	)

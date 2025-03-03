@@ -1,5 +1,5 @@
 const LearnPage = () => {
-	return <div></div>
+	return <div>q</div>
 }
 
 export default LearnPage

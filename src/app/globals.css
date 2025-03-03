@@ -1,8 +1,15 @@
 @import 'tailwindcss';
-
 @plugin 'tailwindcss-animate';
-
 @custom-variant dark (&:is(.dark *));
+@tilwind utilities;
+@tilwind components;
+@tilwind base;
+
+html,
+body,
+:root {
+	height: 100%;
+}
 
 @theme {
 	--font-sans: var(--font-nunito);
@@ -11,8 +18,6 @@
 }
 
 :root {
-	--background: oklch(1 0 0);
-	--foreground: oklch(0.129 0.042 264.695);
 	--card: oklch(1 0 0);
 	--card-foreground: oklch(0.129 0.042 264.695);
 	--popover: oklch(1 0 0);
@@ -46,6 +51,8 @@
 	--sidebar-accent-foreground: oklch(0.208 0.042 265.755);
 	--sidebar-border: oklch(0.929 0.013 255.508);
 	--sidebar-ring: oklch(0.869 0.022 252.894);
+	--background: oklch(1 0 0);
+	--foreground: oklch(0.129 0.042 264.695);
 }
 
 .dark {

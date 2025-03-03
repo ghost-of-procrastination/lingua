@@ -1,5 +1,5 @@
 import MascotIcon from '@/assets/mascot.svg'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/shadcn/components/ui/button'
 
 import {
 	ClerkLoaded,
