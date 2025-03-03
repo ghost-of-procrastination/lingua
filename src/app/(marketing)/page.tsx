@@ -1,5 +1,6 @@
 import HeroIcon from '@/assets/hero.svg'
-import { Button } from '@/components/ui/button'
+import { Spinner } from '@/components/spinner'
+import { Button } from '@/shadcn/components/ui/button'
 import {
 	ClerkLoaded,
 	ClerkLoading,
@@ -24,7 +25,7 @@ const Home = () => {
 				</h1>
 				<div className="flex flex-col gap-2 w-full sm:w-sm">
 					<ClerkLoading>
-						<Loader className="h-5 w-5 text-muted-foreground animate-spin" />
+						<Spinner />
 					</ClerkLoading>
 					<ClerkLoaded>
 						<SignedOut>

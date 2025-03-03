@@ -1,3 +1,6 @@
+import { MobileHeader } from '@/components/layout/mobile-header'
+import { Sidebar } from '@/components/layout/sidebar/sidebar'
+
 interface Props {
 	children: React.ReactNode
 }
@@ -5,8 +8,12 @@ interface Props {
 const MainLayout = ({ children }: Props) => {
 	return (
 		<>
-			<main className="pl-[256px] h-full">
-				{children}
+			<MobileHeader />
+			<Sidebar className="hidden lg:flex" />
+			<main className="lg:pl-clg h-full flex pt-csm lg:pt-0">
+				<div className="w-page mx-auto pt-8 h-full">
+					{children}
+				</div>
 			</main>
 		</>
 	)
