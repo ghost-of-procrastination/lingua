@@ -9,7 +9,6 @@ import {
 	SignInButton,
 	SignUpButton,
 } from '@clerk/nextjs'
-import { Loader } from 'lucide-react'
 import Link from 'next/link'
 
 const Home = () => {
