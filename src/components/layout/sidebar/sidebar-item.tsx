@@ -2,7 +2,6 @@
 
 import { Button } from '@/shadcn/components/ui/button'
 import { cn } from '@/shadcn/lib/utils'
-import { SvgIcon } from '@/types'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 

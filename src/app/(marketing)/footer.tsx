@@ -1,8 +1,8 @@
-import DeIcon from '@/assets/de-flag.svg'
-import FrIcon from '@/assets/fr-flag.svg'
-import JpIcon from '@/assets/jp-flag.svg'
-import KrIcon from '@/assets/kr-flag.svg'
-import UsIcon from '@/assets/us-flag.svg'
+import DeIcon from '@/assets/icons/countries/de-flag.svg'
+import FrIcon from '@/assets/icons/countries/fr-flag.svg'
+import JpIcon from '@/assets/icons/countries/jp-flag.svg'
+import KrIcon from '@/assets/icons/countries/kr-flag.svg'
+import UsIcon from '@/assets/icons/countries/us-flag.svg'
 import { Button } from '@/shadcn/components/ui/button'
 import { SvgIcon } from '@/types'
 

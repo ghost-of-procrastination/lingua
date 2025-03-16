@@ -1,4 +1,4 @@
-import MascotIcon from '@/assets/mascot.svg'
+import MascotIcon from '@/assets/icons/mascot.svg'
 import Link from 'next/link'
 
 export const Logo = () => {

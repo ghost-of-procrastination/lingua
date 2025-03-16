@@ -1,7 +1,7 @@
 import { Button } from '@/shadcn/components/ui/button'
 import Link from 'next/link'
-import PointsIcon from '@/assets/points.svg'
-import HeartIcon from '@/assets/heart.svg'
+import PointsIcon from '@/assets/icons/points.svg'
+import HeartIcon from '@/assets/icons/heart.svg'
 import { InfinityIcon } from 'lucide-react'
 
 interface Props {

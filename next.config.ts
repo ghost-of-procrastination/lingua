@@ -1,12 +1,31 @@
 import type { NextConfig } from 'next'
+import CopyPlugin from 'copy-webpack-plugin'
+import path from 'path'
 
 const nextConfig: NextConfig = {
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg$/i,
-			include: /src\/assets\/.*\.svg$/, // this allows icon.svg in app dir to work. All SVGs to be handled by SVGR are in src/assets
 			use: ['@svgr/webpack'],
 		})
+
+		config.plugins.push(
+			new CopyPlugin({
+				patterns: [
+					{
+						from: path.resolve(
+							__dirname,
+							'./src/assets/icons/countries',
+						),
+						to: path.resolve(
+							__dirname,
+							'./public/icons/countries',
+						),
+						noErrorOnMissing: true,
+					},
+				],
+			}),
+		)
 
 		return config
 	},

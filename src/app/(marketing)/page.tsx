@@ -1,4 +1,4 @@
-import HeroIcon from '@/assets/hero.svg'
+import HeroIcon from '@/assets/icons/hero.svg'
 import { Spinner } from '@/components/spinner'
 import { Button } from '@/shadcn/components/ui/button'
 import {

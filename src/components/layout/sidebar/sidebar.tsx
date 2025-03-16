@@ -4,16 +4,15 @@ import {
 	SidebarItem,
 	SidebarItemProps,
 } from './sidebar-item'
-import LearnIcon from '@/assets/learn.svg'
-import LeaderboardIcon from '@/assets/leaderboard.svg'
-import QuestsIcon from '@/assets/quests.svg'
-import ShopIcon from '@/assets/shop.svg'
+import LearnIcon from '@/assets/icons/learn.svg'
+import LeaderboardIcon from '@/assets/icons/leaderboard.svg'
+import QuestsIcon from '@/assets/icons/quests.svg'
+import ShopIcon from '@/assets/icons/shop.svg'
 import {
 	ClerkLoaded,
 	ClerkLoading,
 	UserButton,
 } from '@clerk/nextjs'
-import { Loader } from 'lucide-react'
 import { Spinner } from '@/components/spinner'
 
 interface Props {

@@ -10,7 +10,6 @@ import {
 	SignInButton,
 	UserButton,
 } from '@clerk/nextjs'
-import { Loader } from 'lucide-react'
 
 export const Header = () => {
 	return (
